@@ -1,0 +1,15 @@
+generated: '2026-08-25'
+method: searched
+source: https://www.lightelligence.ai/products/photon-computing/pace2
+plan_count: 0
+note: >-
+  Lightelligence publishes no plans, tiers, or prices of any kind. It sells physical optoelectronic
+  hardware — the PACE 2 accelerator card, the Gazelle evaluation board, Photowave CXL interconnect and
+  Lightsphere X optical circuit switch — through a "Contact us" motion; every product page ends in a
+  contact form rather than a price. There is no API, therefore no usage tier, quota or overage to
+  record. plan_count 0 is a measured absence, not an unchecked field.
+evidence:
+- {url: 'https://www.lightelligence.ai/products/photon-computing/pace2', status: 200, finding: product page, no price and no plan table}
+- {url: 'https://www.lightelligence.ai/about-us/contact-us', status: 200, finding: contact form is the commercial entry point}
+- {url: 'https://e-commerce.lightelligence.ai/index.php/product/PACE2.html', status: 404, finding: the storefront URL indexed by search engines is dead; e-commerce.lightelligence.ai itself only answers via the DNS wildcard that serves the marketing homepage}
+plans: []

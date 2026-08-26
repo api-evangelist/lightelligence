@@ -1,0 +1,13 @@
+generated: '2026-08-25'
+method: searched
+source: https://www.lightelligence.ai/community
+limit_count: 0
+note: >-
+  No rate limits are published because there is no web API to rate-limit. Lightelligence's compute
+  products are PCIe accelerator cards and optical switching hardware installed in the customer's own
+  rack; the software contract is a device-side SDK, not a hosted endpoint. No X-RateLimit-*,
+  RateLimit-* or Retry-After header surface exists to observe. limit_count 0 is a measured absence.
+evidence:
+- {url: 'https://www.lightelligence.ai/community', status: 200, finding: developer community carries research cases and papers only, no API reference}
+- {url: 'https://www.lightelligence.ai/downloads', status: 200, finding: Document Center is a lead-capture form (name/phone/email/company plus emailed verification code), no rate-limit documentation}
+limits: []

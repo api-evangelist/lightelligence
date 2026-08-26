@@ -1,0 +1,73 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://github.com/Lightelligence (org homepage field resolves to https://www.lightelligence.ai/,
+  confirming first-party), plus live registry probes of PyPI, npm and readthedocs.org on 2026-08-25.
+note: >-
+  Lightelligence publishes no client library for a web API, because it publishes no web API. What it
+  DID ship was a device-side Python SDK ("lt_sdk", distributed on PyPI as lightelligence-sdk) that
+  compiled and ran models on the company's optical processing unit, documented on Read the Docs. That
+  entire distribution has been withdrawn: the PyPI project, the Read the Docs project and the
+  Lightelligence/SDKDocs GitHub repository all now return 404 while the public SDKExamples repository
+  that depends on them is still online and still instructs users to install them. This is a decayed
+  developer program, not an absent one.
+packages:
+- language: python
+  registry: pypi
+  name: lightelligence-sdk
+  url: https://pypi.org/project/lightelligence-sdk/
+  install: pip install lightelligence-sdk
+  official: true
+  status: withdrawn
+  version: null
+  published: null
+  last_referenced_version: 0.1.15
+  note: >-
+    version/published are null because the package no longer exists on PyPI —
+    https://pypi.org/simple/lightelligence-sdk/ returned 404 on 2026-08-25 against a control probe of
+    https://pypi.org/simple/requests/ that returned 200, so the 404 is authoritative and not a bot
+    challenge. last_referenced_version 0.1.15 is the pin still recorded in
+    https://raw.githubusercontent.com/Lightelligence/SDKExamples/master/requirements.txt, the
+    company's own public example repository; it is the last version the provider is known to have
+    published, NOT a version currently installable.
+  docs: https://lightelligence-sdk.readthedocs.io/en/latest/index.html
+  docs_status: 404
+  docs_note: >-
+    Read the Docs answers "Project not found"; readthedocs.org/api/v3/projects/lightelligence-sdk/
+    returns {"detail":"No Project matches the given query."}. The source repository the SDK docs
+    pointed at, https://github.com/Lightelligence/SDKDocs, returns 404 via the GitHub API.
+- language: python
+  registry: pypi
+  name: model-vis
+  url: https://pypi.org/project/model-vis/
+  install: pip install model-vis
+  official: true
+  status: published
+  version: 0.0.22
+  published: '2020-08-17'
+  source_code: https://github.com/Lightelligence/model_vis
+  kind: tool
+  note: >-
+    Interactive graph visualization for ML models, not an API client. Attribution rests on an exact
+    match: the PyPI latest version (0.0.22, uploaded 2020-08-17, read from
+    https://pypi.org/simple/model-vis/) equals the version declared in setup.py in the
+    Lightelligence GitHub organization's own model_vis repository, whose README instructs
+    "pip install model-vis". The PyPI upload carries a personal author_email rather than a company
+    address, so the publisher is an individual at the company rather than a company account.
+    Abandoned since 2020.
+excluded:
+- name: "@lightelligence/react, @lightelligence/styles, @lightelligence/browser-sdk"
+  registry: npm
+  reason: >-
+    OWNERSHIP — these belong to the LEDVANCE "Lightelligence" IoT cloud platform at
+    lightelligence.io, a different company that happens to share the name. They are not published by
+    Shanghai Xizhi Technology Co., Ltd. / Lightelligence the photonic computing company profiled
+    here, and were deliberately not recorded as this provider's packages.
+registries_probed:
+- {registry: pypi, result: 1 live package (model-vis), 1 withdrawn (lightelligence-sdk)}
+- {registry: npm, result: none first-party — only the same-name LEDVANCE scope, excluded above}
+- {registry: rubygems, result: not probed — no Ruby surface published}
+- {registry: crates.io, result: not probed — no Rust surface published}
+- {registry: maven, result: not probed — no JVM surface published}
+- {registry: nuget, result: not probed — no .NET surface published}
+- {registry: go, result: not probed — no Go surface published}
