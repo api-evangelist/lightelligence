@@ -56,7 +56,7 @@ tags:
 - Hardware Accelerators
 - High Performance Computing
 - Optical Interconnect
-- Data-Center
+- Data Center
 tags_raw:
 - Company
 - Optical Computing
@@ -67,6 +67,7 @@ tags_raw:
 - High Performance Computing
 - Optical Interconnect
 - Data Center
+- Data-Center
 apis: []
 maintainers:
 - FN: Kin Lane
