@@ -2,11 +2,11 @@
   "repo": "lightelligence",
   "feeds": [
     {
-      "source": "https://www.lightelligence.ai/",
-      "feed_url": "https://www.lightelligence.ai/rss.xml",
+      "source": "https://www.lightelligence.ai/about-us/news/blogs",
+      "feed_url": "https://www.lightelligence.ai/about-us/news/blogs",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "none"
     },
     {
       "source": "https://www.lightelligence.ai/rss.xml",
@@ -17,5 +17,5 @@
     }
   ],
   "post_count": 38,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
