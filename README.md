@@ -64,5 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lightelligence is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/lightelligence-stock
+Lightelligence (legal entity Shanghai Xizhi Technology Co., Ltd. / 曦智科技, founded 2017 as an MIT spin-out) builds optoelectronic hybrid computing hardware — photonic accelerators and optical interconnect fabric for AI and high-performance computing. Its product line is physical: the PACE 2 optoelectronic accelerated computing card (a PCIe Gen4 x16 accelerator built around a 128x128 optical matrix multiplier), the Gazelle optical computing evaluation board, the Photowave CXL optical interconnect, and the Lightsphere X distributed optical circuit switch, supported by the company's oMAC, oNOC and oNET optical core, network-on-chip and inter-chip network technologies. The software surface is a device-side stack — ONNX, OpenCL, PyTorch and TVM support plus a Python SDK (lt_sdk) that compiled and ran models on the optical processing unit — not a web API. As of this profile the company publishes no public web API, no OpenAPI/AsyncAPI/GraphQL contract, and no developer portal; the lightelligence-sdk package and its Read the Docs reference have both been withdrawn. Its remaining public developer-facing surface is a GitHub organization of chip design and verification tooling (Bazel Verilog build rules, RTL/UVM linters, the yis interface-spec generator) and an Optical Computing Developer Community of research cases and papers.
+
+**Areas:** Company · Optical Computing · Photonics · Semiconductors · AI Infrastructure · Hardware Accelerators · High Performance Computing · Optical Interconnect · Data Center
+
+## Lightelligence on APIs.io
+
+Everything profiled for Lightelligence is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lightelligence/](https://apis.io/providers/lightelligence/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lightelligence Domain Security](https://apis.io/security/lightelligence/lightelligence-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Lightelligence Plans Pricing](https://apis.io/plans/lightelligence/lightelligence-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Lightelligence Rate Limits](https://apis.io/rate-limits/lightelligence/lightelligence-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.lightelligence.ai/)
+- [Support](https://www.lightelligence.ai/about-us/contact-us)
+- [Blog](https://www.lightelligence.ai/about-us/news/blogs)
+- [Terms of service](https://www.lightelligence.ai/legal)
+- [Privacy policy](https://www.lightelligence.ai/privacy)
+- [GitHub](https://github.com/Lightelligence)
+
+## API Evangelist rating
+
+**Kin Score 11.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lightelligence/](https://apis.io/providers/lightelligence/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lightelligence: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lightelligence/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
